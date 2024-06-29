@@ -10,12 +10,30 @@ import SwiftUI
 struct FoodOrderingTabView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+          
+                TabView{
+                    HomeView()
+                        .tabItem { Image(systemName: "house")
+                            Text("Home")
+                        }
+                        
+                    
+                    AccountView()
+                        .tabItem { Image(systemName: "person")
+                            Text("Account")
+                        }
+                    
+                    OrderView()
+                        .tabItem { Image(systemName: "bag")
+                            Text("Orders")
+                        }
+                }
+                .accentColor(.primaryColor)
+            
+            
         }
-        .padding()
+   
     }
 }
 
