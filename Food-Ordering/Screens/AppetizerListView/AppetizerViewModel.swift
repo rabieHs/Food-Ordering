@@ -11,11 +11,20 @@ class AppetizerViewModel:ObservableObject {
     @Published var appetizers : [Appetizer] = []
     @Published var alertItem : AlertItem?
     @Published var isLoading = false
+    @Published  var isShowingDetails = false
+    @Published  var selectedItem: Appetizer?
     
     
     init(){
         getAppetizers()
     }
+    
+    func showDetailsView(appetizer: Appetizer){
+        selectedItem = appetizer
+        isShowingDetails = true
+    }
+    
+    
     
     func getAppetizers(){
         NetworkManager.shared.getAppetizers {(result) in

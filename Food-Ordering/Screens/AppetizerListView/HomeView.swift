@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var viewModel = AppetizerViewModel()
     @State private var appetizers : [Appetizer] = []
-    
+
     
    
     
@@ -19,9 +19,19 @@ struct HomeView: View {
             NavigationView {
                 List(viewModel.appetizers){appetizer in
                    AppetizerListCell(appetizer: appetizer)
+                        .onTapGesture {
+                            viewModel.showDetailsView(appetizer: appetizer)
+                        }
                 }.listStyle(.plain)
                 .navigationTitle("Home")
+                .disabled(viewModel.isShowingDetails)
                 }
+            .blur(radius: viewModel.isShowingDetails ? 20 : 0)
+            
+            if viewModel.isShowingDetails {
+                AppetizerDetailsView(appetizer: viewModel.selectedItem!, isShowingDetails: $viewModel.isShowingDetails)
+            }
+            
             if viewModel.isLoading{
                 LoadingView()
             }

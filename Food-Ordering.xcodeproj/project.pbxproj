@@ -24,6 +24,11 @@
 		E85ADA2D2C3044E40057C3FA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA2C2C3044E40057C3FA /* Color.swift */; };
 		E85ADA2F2C31641A0057C3FA /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA2E2C31641A0057C3FA /* RemoteImage.swift */; };
 		E85ADA3E2C31778F0057C3FA /* AppetizerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA3D2C31778F0057C3FA /* AppetizerDetailsView.swift */; };
+		E85ADA412C32B35C0057C3FA /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA402C32B35C0057C3FA /* APButton.swift */; };
+		E85ADA432C32B4AD0057C3FA /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA422C32B4AD0057C3FA /* DismissButton.swift */; };
+		E85ADA452C32C2290057C3FA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA442C32C2290057C3FA /* AccountViewModel.swift */; };
+		E85ADA472C32C5080057C3FA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA462C32C5080057C3FA /* String.swift */; };
+		E85ADA492C32D3C40057C3FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA482C32D3C40057C3FA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,11 @@
 		E85ADA2C2C3044E40057C3FA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E85ADA2E2C31641A0057C3FA /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E85ADA3D2C31778F0057C3FA /* AppetizerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailsView.swift; sourceTree = "<group>"; };
+		E85ADA402C32B35C0057C3FA /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		E85ADA422C32B4AD0057C3FA /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		E85ADA442C32C2290057C3FA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		E85ADA462C32C5080057C3FA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E85ADA482C32D3C40057C3FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E85ADA1A2C2EC6070057C3FA /* AccountView.swift */,
+				E85ADA442C32C2290057C3FA /* AccountViewModel.swift */,
 			);
 			path = AppetizerAccountView;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E85ADA2C2C3044E40057C3FA /* Color.swift */,
+				E85ADA462C32C5080057C3FA /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -172,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E85ADA1E2C2EDBA40057C3FA /* Appetizer.swift */,
+				E85ADA482C32D3C40057C3FA /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 		E85ADA392C316BE00057C3FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E85ADA3F2C32B3420057C3FA /* Buttons */,
 				E85ADA3C2C316C240057C3FA /* Image */,
 				E85ADA3B2C316BF90057C3FA /* Cells */,
 				E85ADA3A2C316BE70057C3FA /* UIKit-Components */,
@@ -208,6 +222,15 @@
 				E85ADA2E2C31641A0057C3FA /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		E85ADA3F2C32B3420057C3FA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E85ADA402C32B35C0057C3FA /* APButton.swift */,
+				E85ADA422C32B4AD0057C3FA /* DismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85ADA472C32C5080057C3FA /* String.swift in Sources */,
 				E85ADA1F2C2EDBA40057C3FA /* Appetizer.swift in Sources */,
 				E85ADA252C3027D40057C3FA /* APError.swift in Sources */,
 				E85ADA212C2EE4690057C3FA /* AppetizerListCell.swift in Sources */,
 				E85ADA1B2C2EC6070057C3FA /* AccountView.swift in Sources */,
+				E85ADA452C32C2290057C3FA /* AccountViewModel.swift in Sources */,
 				E85ADA2D2C3044E40057C3FA /* Color.swift in Sources */,
+				E85ADA432C32B4AD0057C3FA /* DismissButton.swift in Sources */,
+				E85ADA492C32D3C40057C3FA /* User.swift in Sources */,
 				E85ADA192C2EC5F10057C3FA /* HomeView.swift in Sources */,
+				E85ADA412C32B35C0057C3FA /* APButton.swift in Sources */,
 				E85ADA2B2C3041F00057C3FA /* LoadingView.swift in Sources */,
 				E85ADA232C3025AC0057C3FA /* NetworkManager.swift in Sources */,
 				E85ADA3E2C31778F0057C3FA /* AppetizerDetailsView.swift in Sources */,
