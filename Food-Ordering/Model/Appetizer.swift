@@ -25,6 +25,9 @@ struct AppetizerResponse : Codable {
 
 struct MockData {
     static let sampleAppetizer = Appetizer(id: 1, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 8.99, imageURL: "", calories: 300, carbs: 1, protein: 0)
+    static let sampleAppetizer2 = Appetizer(id: 2, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 8.99, imageURL: "", calories: 300, carbs: 1, protein: 0)
+    static let sampleAppetizer3 = Appetizer(id: 3, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 8.99, imageURL: "", calories: 300, carbs: 1, protein: 0)
+    static let sampleAppetizer4 = Appetizer(id: 4, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", price: 8.99, imageURL: "", calories: 300, carbs: 1, protein: 0)
     
-    static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    static let appetizers = [sampleAppetizer, sampleAppetizer2, sampleAppetizer3, sampleAppetizer4]
 }

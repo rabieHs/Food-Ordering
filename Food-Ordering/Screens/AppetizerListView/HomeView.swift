@@ -19,10 +19,12 @@ struct HomeView: View {
             NavigationView {
                 List(viewModel.appetizers){appetizer in
                    AppetizerListCell(appetizer: appetizer)
+                        .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewModel.showDetailsView(appetizer: appetizer)
                         }
                 }.listStyle(.plain)
+                 
                 .navigationTitle("Home")
                 .disabled(viewModel.isShowingDetails)
                 }

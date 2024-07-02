@@ -9,14 +9,32 @@ import SwiftUI
 
 struct AccountView: View {
     @StateObject  var viewModel = AccountViewModel()
-   
+    @FocusState private var focusedTextField: FormTextField?
+    enum FormTextField  {
+        case firstName, lastName, email
+    }
     var body: some View {
         NavigationView{
             Form{
                 Section(content: {
                     TextField("First Name", text: $viewModel.user.firstName)
+                        .focused($focusedTextField, equals: .firstName)
+                        .onSubmit {
+                            focusedTextField = .lastName
+                        }
+                        .submitLabel(.next)
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .onSubmit {
+                            focusedTextField = .email
+                        }
+                        .focused($focusedTextField, equals: .lastName)
+                        .submitLabel(.next)
                     TextField("Email", text: $viewModel.user.email)
+                        .onSubmit {
+                            focusedTextField = nil
+                        }
+                        .focused($focusedTextField, equals: .email)
+                        .submitLabel(.continue)
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled(true)
@@ -43,6 +61,13 @@ struct AccountView: View {
                 })
                 
 
+            }
+            .toolbar{
+                ToolbarItemGroup(placement: .keyboard, content: {
+                    Button("Dismiss", action: {
+                        focusedTextField = nil
+                    })
+                })
             }
                 .navigationTitle("Account")
         }.alert(item: $viewModel.alertItem) { alert in

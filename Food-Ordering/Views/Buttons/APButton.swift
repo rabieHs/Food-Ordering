@@ -21,5 +21,5 @@ struct APButton: View {
 }
 
 #Preview {
-    APButton(title: "")
+    APButton(title: "simple text")
 }

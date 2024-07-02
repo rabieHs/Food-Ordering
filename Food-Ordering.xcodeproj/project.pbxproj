@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83646FC2C34090600371435 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83646FB2C34090600371435 /* EmptyState.swift */; };
+		E83646FE2C340D9F00371435 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83646FD2C340D9F00371435 /* Order.swift */; };
+		E83647002C341D1100371435 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83646FF2C341D1100371435 /* CustomModifiers.swift */; };
 		E85ADA0B2C2CC64C0057C3FA /* Food_OrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA0A2C2CC64C0057C3FA /* Food_OrderingApp.swift */; };
 		E85ADA0D2C2CC64C0057C3FA /* FoodOrderingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85ADA0C2C2CC64C0057C3FA /* FoodOrderingTabView.swift */; };
 		E85ADA0F2C2CC64F0057C3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85ADA0E2C2CC64F0057C3FA /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E83646FB2C34090600371435 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		E83646FD2C340D9F00371435 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E83646FF2C341D1100371435 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		E85ADA072C2CC64C0057C3FA /* Food-Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85ADA0A2C2CC64C0057C3FA /* Food_OrderingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_OrderingApp.swift; sourceTree = "<group>"; };
 		E85ADA0C2C2CC64C0057C3FA /* FoodOrderingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingTabView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E83646FA2C3408DA00371435 /* EmptyStates */ = {
+			isa = PBXGroup;
+			children = (
+				E83646FB2C34090600371435 /* EmptyState.swift */,
+			);
+			path = EmptyStates;
+			sourceTree = "<group>";
+		};
 		E85AD9FE2C2CC64C0057C3FA = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +199,7 @@
 			children = (
 				E85ADA1E2C2EDBA40057C3FA /* Appetizer.swift */,
 				E85ADA482C32D3C40057C3FA /* User.swift */,
+				E83646FD2C340D9F00371435 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,10 +207,12 @@
 		E85ADA392C316BE00057C3FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E83646FA2C3408DA00371435 /* EmptyStates */,
 				E85ADA3F2C32B3420057C3FA /* Buttons */,
 				E85ADA3C2C316C240057C3FA /* Image */,
 				E85ADA3B2C316BF90057C3FA /* Cells */,
 				E85ADA3A2C316BE70057C3FA /* UIKit-Components */,
+				E83646FF2C341D1100371435 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +324,7 @@
 				E85ADA1F2C2EDBA40057C3FA /* Appetizer.swift in Sources */,
 				E85ADA252C3027D40057C3FA /* APError.swift in Sources */,
 				E85ADA212C2EE4690057C3FA /* AppetizerListCell.swift in Sources */,
+				E83646FE2C340D9F00371435 /* Order.swift in Sources */,
 				E85ADA1B2C2EC6070057C3FA /* AccountView.swift in Sources */,
 				E85ADA452C32C2290057C3FA /* AccountViewModel.swift in Sources */,
 				E85ADA2D2C3044E40057C3FA /* Color.swift in Sources */,
@@ -318,9 +336,11 @@
 				E85ADA232C3025AC0057C3FA /* NetworkManager.swift in Sources */,
 				E85ADA3E2C31778F0057C3FA /* AppetizerDetailsView.swift in Sources */,
 				E85ADA0D2C2CC64C0057C3FA /* FoodOrderingTabView.swift in Sources */,
+				E83646FC2C34090600371435 /* EmptyState.swift in Sources */,
 				E85ADA2F2C31641A0057C3FA /* RemoteImage.swift in Sources */,
 				E85ADA272C3039B70057C3FA /* AppetizerViewModel.swift in Sources */,
 				E85ADA292C303D440057C3FA /* Alert.swift in Sources */,
+				E83647002C341D1100371435 /* CustomModifiers.swift in Sources */,
 				E85ADA0B2C2CC64C0057C3FA /* Food_OrderingApp.swift in Sources */,
 				E85ADA1D2C2EC6110057C3FA /* OrderView.swift in Sources */,
 			);
