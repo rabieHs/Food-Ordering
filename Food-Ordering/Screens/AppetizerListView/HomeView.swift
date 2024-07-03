@@ -27,7 +27,9 @@ struct HomeView: View {
                  
                 .navigationTitle("Home")
                 .disabled(viewModel.isShowingDetails)
-                }
+            }.task {
+                viewModel.getAppetizers()
+            }
             .blur(radius: viewModel.isShowingDetails ? 20 : 0)
             
             if viewModel.isShowingDetails {
